@@ -11,7 +11,7 @@ Bandanas -- a scarf with  flower or pattern on it
 Prospect -- hope , start with Pr
 Nefarious -- evil, start with Nef
 Fraternity -- friendship, start with Fra.
-Marginalized -- alienated , start with Margin
+Marginalize -- alienate , start with Margin
 Notorious -- very bad reputation , every one knows 
 Syndicates -- a famous gang
 Turf -- grass land
