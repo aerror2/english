@@ -30,7 +30,7 @@ Jig -- a dance start with J
 Extortion -- blackmail, start with Ex
 Kingpin -- hinge , start with Ki
 Municipal -- civil , start with Mu
-Stalwart  -- adamant , start with Sta
+Stalwart  -- adamant , staunch,  start with Sta
 Bellicosity -- charateristics of enjoying fighting	
 Make sb raise hackle -- infuriate , end with kle
 Muster -- assemble , start with Mus
@@ -40,7 +40,7 @@ Cling -- grab, start with cli
 Stranded -- left without means to move 
 Chic -- fashion
 Pared-back -- simple style
-Bellwether -- leader of a group of goats
+Bellwether -- a leading goat of a group of goats wearing a bell 
 Sleek --  smooth and shining 
 Brooch -- pin for decroration 
 Voluminous  -- oppose to tight while wearing clothes.

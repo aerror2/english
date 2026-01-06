@@ -11,7 +11,7 @@ Backdrop -- a painted cloth hung at the back of a theater.
 Cement -- ingredient of concrete , enhance, 
 Jolt -- shake, start with Jo
 Prowl -- move around covertly
-Browbeat -- threaten , intimidate . 
+Browbeat -- threaten , intimidate , start with Br
 Bracket --  {}, ()
 Loath -- unwilling , start with loa
 Acquiesce -- accept something without protest
@@ -28,11 +28,11 @@ Strait -- sea between two lands
 Propaganda -- advertising of politics
 Ire -- anger, three letters, start with I
 Despair -- frustration 
-Dilapidate -- very broken
+Dilapidate -- very broken, start with di
 Flimsy -- very thin, start with  fli
 Waterlogged --  the bottom part is under water
 Martyr -- die in religious way
 Dire  -- very urgent, start win di
-Pummel -- batter
+Pummel -- batter, start with P
 Keg -- a small barrel 
 Obstinate -- stubborn , start with ob
