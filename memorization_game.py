@@ -54,10 +54,13 @@ class MemorizationGame:
         self.score = 0  # Initialize score
         self.guessed_words = set()  # Track guessed words
         self.total_tries = 0  # Track total number of tries
+        self.total_wrong_attempts = 0  # Track total number of wrong attempts (meaning->word mode)
         self.selected_files = []
         self.review_log_path = (Path(__file__).resolve().parent / "db_words_to_review.txt")
         self.logged_this_round = set()
         self.current_word_first_try = True
+        self.current_word_error_count = 0
+        self.current_word_answer_revealed = False
         self.exclude_reviewed_var = tk.BooleanVar(value=True)
         self._reviewed_words_cache = None  # set of lowercased words already in db_words_to_review.txt
 
@@ -67,6 +70,7 @@ class MemorizationGame:
 
         tk.Label(self.menu_frame, text="Memorization Game", font=("Arial", 24)).pack()
         tk.Button(self.menu_frame, text="Select Word Files (word*.txt)", command=self.select_word_files).pack(pady=10)
+        tk.Button(self.menu_frame, text="Load All words?[0-9]+.txt", command=self.load_all_numbered_word_files).pack(pady=4)
         tk.Checkbutton(
             self.menu_frame,
             text="Exclude words in words_to_review.txt (resume progress)",
@@ -193,6 +197,32 @@ class MemorizationGame:
             self.source_label.config(text="No valid words found in selected files.")
             messagebox.showwarning("Warning", "No valid words found in the selected file(s).")
 
+    def load_all_numbered_word_files(self):
+        """
+        Auto-load all files in the script directory matching: words?[0-9]+.txt
+        Examples: word3.txt, words1.txt, words18.txt
+        """
+        base_dir = Path(__file__).resolve().parent
+        rx = re.compile(r"^word[s]?\d+\.txt$", re.IGNORECASE)
+        file_paths = sorted([p for p in base_dir.iterdir() if p.is_file() and rx.match(p.name)])
+
+        if not file_paths:
+            messagebox.showwarning("Warning", f"No files matched words?[0-9]+.txt in:\n{base_dir}")
+            return
+
+        self.selected_files = [str(p) for p in file_paths]
+        self.words = load_words_from_files(self.selected_files)
+        self._update_source_label()
+
+        if self.words:
+            messagebox.showinfo(
+                "Success",
+                f"Loaded {len(self.words)} words from {len(self.selected_files)} file(s).\n"
+                f"Pattern: words?[0-9]+.txt",
+            )
+        else:
+            messagebox.showwarning("Warning", "No valid words found in the matched file(s).")
+
     def start_guessing_game(self):
         if not self.words:
             messagebox.showwarning("Warning", "Please load words first.")
@@ -205,6 +235,7 @@ class MemorizationGame:
         # Reset round stats
         self.score = 0
         self.total_tries = 0
+        self.total_wrong_attempts = 0
         self.guessed_words = set()
         self.logged_this_round = set()
 
@@ -237,13 +268,22 @@ class MemorizationGame:
 
     def show_next_guessing_word(self):
         if self.current_word_index >= len(self.guessing_round_words):
-            messagebox.showinfo("Round Complete", f"You have completed this round!\nYour score: {self.score}/{len(self.guessing_round_words)}\nTotal tries: {self.total_tries}\nPerfect score: {len(self.guessing_round_words)}")
+            messagebox.showinfo(
+                "Round Complete",
+                f"You have completed this round!\n"
+                f"Your score (first-try correct): {self.score}/{len(self.guessing_round_words)}\n"
+                f"Total tries: {self.total_tries}\n"
+                f"Wrong attempts: {self.total_wrong_attempts}\n"
+                f"Perfect score: {len(self.guessing_round_words)}",
+            )
             self.back_to_menu()
             return
 
         self.current_word = self.guessing_round_words[self.current_word_index]
         self.current_word_index += 1
         self.current_word_first_try = True
+        self.current_word_error_count = 0
+        self.current_word_answer_revealed = False
         
         # Clear previous game frame
         for widget in self.game_frame.winfo_children():
@@ -272,6 +312,8 @@ class MemorizationGame:
             messagebox.showinfo("Correct!", "You guessed the word correctly!")
             self.show_next_guessing_word()
         else:
+            self.total_wrong_attempts += 1
+            self.current_word_error_count += 1
             if self.current_word_first_try:
                 self._append_review_log(
                     self.current_word[0],
@@ -280,8 +322,17 @@ class MemorizationGame:
                     reason="missed_first_try",
                 )
                 self.current_word_first_try = False
-            hint = self.current_word[0][0] if self.current_word[0] else ""
-            messagebox.showerror("Incorrect", f"Incorrect. Try again.\nHint: starts with '{hint}'")
+            # 1st wrong: give hint; 2nd wrong: reveal full word (but keep current question).
+            if self.current_word_error_count == 1:
+                hint = self.current_word[0][0] if self.current_word[0] else ""
+                messagebox.showerror("Incorrect", f"Incorrect. Try again.\nHint: starts with '{hint}'")
+            else:
+                self.current_word_answer_revealed = True
+                messagebox.showerror(
+                    "Incorrect",
+                    f"Incorrect again.\nThe correct word is: {self.current_word[0]}\n\nPlease type it and submit to continue.",
+                )
+            self.guess_entry.focus_set()
 
 
     def skip_guessing_word(self):

@@ -125,7 +125,6 @@ Sabotage -- deliberately destroy
 Cede Territory -- give up Territory.
 Topple his Regime  -- take hist power away by a coup 
 Intense -- very serious, strong feelings 
-Sovereignty --  ruling a country 
 Perennial -- sustain	 
 Anticipation  -- get the conclusion before something really happens , prediction
 Vital -- important, absolutely necessary
