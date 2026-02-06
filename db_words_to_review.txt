@@ -375,3 +375,71 @@ Languish--loss ebullient charateristis	word_to_know	dont_know	2026-01-28 17:21:4
 Slush--partially melted snow or ice	word_to_know	dont_know	2026-01-28 17:22:02
 Notorious--very bad reputation , every one knows	word_to_know	dont_know	2026-01-28 17:22:12
 Frustration--very disappointed	word_to_know	dont_know	2026-01-28 17:22:19
+Snappy--irritated and going to speak sharply	meaning_to_word	missed_first_try	2026-02-02 09:46:29
+Bartending--work strive drink at a bar	meaning_to_word	missed_first_try	2026-02-02 09:48:06
+Swelter--very hot to stand	meaning_to_word	missed_first_try	2026-02-02 09:53:16
+Frugally--contrast to squander , in a subsistence , subsistently	meaning_to_word	missed_first_try	2026-02-02 09:53:54
+Due process--phase,  action abide rule and law	meaning_to_word	missed_first_try	2026-02-02 09:55:03
+Unfurl--unfold	meaning_to_word	missed_first_try	2026-02-02 09:56:06
+Incredulity--incredulous action	meaning_to_word	missed_first_try	2026-02-02 09:57:02
+Right angle--an angle of 90 degrees	meaning_to_word	missed_first_try	2026-02-02 09:58:19
+Tuck--shove but lightly and gently	meaning_to_word	missed_first_try	2026-02-02 09:58:42
+Reap--harvest by sickle	meaning_to_word	missed_first_try	2026-02-02 09:59:20
+Impasse--standstill , standoff, stalemate	meaning_to_word	missed_first_try	2026-02-03 10:43:43
+Unconsolable--very sad , and unable to stop being sad	meaning_to_word	missed_first_try	2026-02-03 10:43:58
+Awning--a plate what installed above the doorway to keep the rain off	meaning_to_word	missed_first_try	2026-02-03 10:44:32
+Preeminent--outstanding	meaning_to_word	missed_first_try	2026-02-03 10:44:56
+Obituary--a declaration  of one's death	meaning_to_word	missed_first_try	2026-02-03 10:45:17
+Malign--harmful	meaning_to_word	missed_first_try	2026-02-03 10:45:28
+pastel--crayon	meaning_to_word	missed_first_try	2026-02-03 10:46:03
+Potent--adj. of Potency, very effective and powerful  , rapidly cause outcome	meaning_to_word	missed_first_try	2026-02-05 09:45:45
+Convoy--a group of vehicles	meaning_to_word	missed_first_try	2026-02-05 09:46:04
+antimony--Ti, precious metal	meaning_to_word	missed_first_try	2026-02-05 09:46:53
+Haul--transport	meaning_to_word	missed_first_try	2026-02-05 09:47:08
+Reprieve--cancel or postpone of the punishment.	meaning_to_word	missed_first_try	2026-02-05 09:47:27
+Conniving--given to or involve in conspiring to do something harmful  , immoral or illegal	meaning_to_word	missed_first_try	2026-02-05 09:47:51
+Outflank--move in the side to circumvent	meaning_to_word	missed_first_try	2026-02-05 09:48:14
+Cobalt--an Ingredient  of Li-On battery, precious metal , start with C	meaning_to_word	missed_first_try	2026-02-05 09:48:40
+Consecrated--make sth sacred , oppose to desecrate	meaning_to_word	missed_first_try	2026-02-05 09:49:20
+Scuttle--run quickly with small step	meaning_to_word	missed_first_try	2026-02-05 09:49:37
+Insatiable--very greed , will be never satisfied , or feel enough	meaning_to_word	missed_first_try	2026-02-05 09:49:49
+Crater--a large , bowl-shaped cavity	meaning_to_word	missed_first_try	2026-02-05 09:50:04
+Garment--a item of clothing	meaning_to_word	missed_first_try	2026-02-05 09:50:23
+Siena--dark brown grey soiled  color	meaning_to_word	missed_first_try	2026-02-05 09:50:35
+Incendiary--combustible	meaning_to_word	missed_first_try	2026-02-05 09:52:12
+Slash--cut, undercut , start with s	meaning_to_word	missed_first_try	2026-02-05 09:53:07
+diaspora--dispersion of people from the original place	meaning_to_word	missed_first_try	2026-02-05 09:53:29
+Apparel--garment, clothing	meaning_to_word	missed_first_try	2026-02-05 09:53:53
+Scarlet--fresh bloody red color.	meaning_to_word	missed_first_try	2026-02-05 09:54:05
+Amputee--one's leg has been cut.	meaning_to_word	missed_first_try	2026-02-05 09:54:29
+Gouge out--to make (a hole or path) by digging or cutting	meaning_to_word	missed_first_try	2026-02-05 09:54:57
+Jihadist--Islamic fight , like crusade	meaning_to_word	missed_first_try	2026-02-05 10:16:46
+Cavernous--vast	meaning_to_word	missed_first_try	2026-02-05 10:17:01
+Groove--a long narrow cut	meaning_to_word	missed_first_try	2026-02-05 10:17:49
+Hangar--store for plane	meaning_to_word	missed_first_try	2026-02-05 10:18:14
+tranche--a portion of sth	meaning_to_word	missed_first_try	2026-02-05 10:18:35
+In-person deposition--phase, testifying	meaning_to_word	missed_first_try	2026-02-05 10:19:30
+Zillion--a myriad of	meaning_to_word	missed_first_try	2026-02-05 10:19:42
+Cadet--military school	meaning_to_word	missed_first_try	2026-02-05 10:20:00
+Cornucopia--excessively  adequate	meaning_to_word	missed_first_try	2026-02-05 10:20:44
+Vanquished--defeat thoroughly	meaning_to_word	missed_first_try	2026-02-06 09:54:19
+Banishment--expel,	meaning_to_word	missed_first_try	2026-02-06 09:54:42
+Cacophony--Vitriolic/acute sound	meaning_to_word	missed_first_try	2026-02-06 09:55:43
+Excruciating--torment physically and mentally	meaning_to_word	missed_first_try	2026-02-06 09:58:12
+Amplify--increate the volume of sound/signal/current	meaning_to_word	missed_first_try	2026-02-06 10:07:09
+Tack--a nail with flat head	meaning_to_word	missed_first_try	2026-02-06 10:07:39
+Thaw--melt	meaning_to_word	missed_first_try	2026-02-06 10:08:07
+Nibble--take small bites of	meaning_to_word	missed_first_try	2026-02-06 10:35:17
+Sequel--sequence	meaning_to_word	missed_first_try	2026-02-06 10:43:37
+Sordid--shoddily for events	meaning_to_word	missed_first_try	2026-02-06 10:45:05
+Proprietary--sell under a brand with legal protection, private	meaning_to_word	missed_first_try	2026-02-06 10:46:56
+Attrition--a process gradually fray the strength	meaning_to_word	missed_first_try	2026-02-06 10:47:18
+Denote--indicate	meaning_to_word	missed_first_try	2026-02-06 10:48:44
+Brink--verge, edge	meaning_to_word	missed_first_try	2026-02-06 10:50:40
+Comprise--be made up of	meaning_to_word	missed_first_try	2026-02-06 10:50:52
+Purported--appear and state to be true	meaning_to_word	missed_first_try	2026-02-06 10:51:37
+Convolution--twist and coil	meaning_to_word	missed_first_try	2026-02-06 10:59:42
+Stateside--in the United States	meaning_to_word	missed_first_try	2026-02-06 11:00:33
+Shellacking--debacle , fiasco	meaning_to_word	missed_first_try	2026-02-06 11:01:41
+Merit--value ,the quality of being particularly good	meaning_to_word	missed_first_try	2026-02-06 11:03:45
+Spunky--brave	meaning_to_word	missed_first_try	2026-02-06 11:04:05
